@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*LOGIN PAGE*/
+.loginpage {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.loginpage .loginbox {
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+    min-height: 200px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .6);
+}
+
+.loginpage .loginbox h1 {
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.loginpage .loginbox .tpbox {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: whitesmoke;
+    padding: 5px;
+    border-bottom: 1px solid whitesmoke;
+    transition: .5s;
+    
+}
+.loginpage .loginbox a{
+    display: flex;
+    margin-top: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.loginpage .loginbox .btn {
+    margin: auto;
+    margin-top: 25px;
+    width: 160px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.loginpage .loginbox .tpbox:focus{
+    font-size: 20px;
+    border-bottom: 2px solid turquoise;
+}
+
+.loginpage .loginbox a:hover{
+    text-decoration: underline;
+}
+
+.loginpage .loginbox .btn:hover{
+    background: turquoise;
+    font-size: 17px;
+}
+
+/*HOME PAGE*/
+
+.homepage{
+    background: #000;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 10px;
+    
+}
+
+.homepage .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.homepage .nav img{
+    width: 150px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.homepage .nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.homepage .nav ul>li>a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+.homepage .nav .opendc{
+    text-decoration: none;
+    padding: 9px;
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+}
+.homepage .nav img:hover{
+    cursor: pointer;
+}
+.homepage .nav ul>li>a:hover{
+    text-decoration: underline;
+}
+.homepage .nav .opendc:hover{
+    color: blue;
+}
+
+.homepage .page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    
+}
+.page .left{
+    min-width: 400px;
+    min-height: 300px;
+    color: #fff;
+}
+
+.homepage .page .left h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 69px;
+    letter-spacing: 2px;
+}
+.homepage .page .left h2{
+    font-size: 16px
+}
+.homepage .page .left .download{
+    margin-top: 50px;
+}
+
+.homepage .page .left .download a{
+    color: #fff;
+    background: #2980b9;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    transition: .5s;
+    
+}
+.homepage .page .left .download a:hover{
+    background: #00cec9;
+}
+.homepage .page .left .download span{
+    padding: 10px;
+}
+
+/*PROFILE PAGE*/
+
+.profile {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/background.png);
+}
+
+.profilepage {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 400px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .6);
+}
+
+.profilepage>form{
+    display: flex;
+    flex-direction: column;
+}
+
+.profilepage>h1{
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid turquoise;
+    letter-spacing: 4px;
+    
+}
+
+.input{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 12px;
+    color: whitesmoke;
+    padding: 5px;
+    border-bottom: 1px solid whitesmoke;
+    transition: .5s;
+}
+.gender{
+    margin-top: 20px;
+}
+.gender>label{
+    color: #fff;
+    font-size: 13px;
+    transition: .5s;
+}
+
+.profilepage>form .btn{
+    margin-top: 20px;
+    width: 130px;
+    height: 30px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    transition: .5s;
+}
+
+.input:focus{
+    border-bottom: 2px solid turquoise;
+    font-size: 15px;
+}
+.profilepage>form>.btn:hover{
+    background: turquoise;
+}
